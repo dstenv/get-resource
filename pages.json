@@ -5,22 +5,52 @@
 			"style": {
 				"navigationBarTitleText": "去水印Tools"
 			}
-		}
-	    ,{
-            "path" : "pages/webview/webview",
+		},
+	    {
+            "path" : "pages/me/me",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "",
+                "navigationBarTitleText": "个人中心",
                 "enablePullDownRefresh": false
             }
             
-        }
+        },
+		{
+		    "path" : "pages/get-resource/get-resource",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "获取资源",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		}
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#8a8a8a",
+		"selectedColor": "#17abe3",
+		"fontSize": "12px",
+		"spacing": "5px",
+		"height": "50px",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"text": "首页",
+				"iconPath": "static/imgs/home.png",
+				"selectedIconPath": "static/imgs/home-active.png"
+			},
+			{
+				"pagePath": "pages/me/me",
+				"text": "我的",
+				"iconPath": "static/imgs/me.png",
+				"selectedIconPath": "static/imgs/me-active.png"
+			}
+		]
 	},
 	"uniIdRouter": {}
 }

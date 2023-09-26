@@ -1,0 +1,39 @@
+
+.container {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	padding: 20rpx 40rpx;
+}
+.get {
+	margin: 20rpx 0 30rpx;
+}
+.input {
+	display: block;
+	border: 1rpx solid dodgerblue;
+	border-radius: 10rpx;
+	padding: 10rpx;
+	width: 100%;
+	box-sizing: border-box;
+}
+.img-list {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	gap: 20rpx 0;
+	flex-wrap: wrap;
+	overflow-y: scroll;
+	padding-top: 40rpx;
+}
+.origin-box {
+	overflow: hidden;
+	border-radius: 10rpx;
+}
+.origin-url {
+	border-radius: 10rpx;
+	width: 300rpx;
+	display: block;
+}
