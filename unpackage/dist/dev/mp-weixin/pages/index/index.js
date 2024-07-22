@@ -4,33 +4,39 @@ var router_index = require("../../router/index.js");
 const _sfc_main = {
   __name: "index",
   setup(__props) {
-    const platformList = [
+    const functionClick = (routerLink) => {
+      router_index.router.push(routerLink);
+    };
+    const functionList = [
       {
-        name: "\u5C0F\u7EA2\u4E66",
-        key: "smallRedBook"
+        name: "\u8D44\u6E90\u83B7\u53D6",
+        router: "/pages/platform-control/platform-control",
+        icon: "../../static/icons/\u6279\u91CF\u83B7\u53D6\u8D44\u6E90.png",
+        key: "getSource",
+        desc: "\u83B7\u53D6\u5C0F\u7EA2\u4E66\u3001\u6296\u97F3\u7B49\u5206\u4EAB\u94FE\u63A5\u5185\u7684\u8D44\u6E90"
       },
       {
-        name: "\u6296\u97F3",
-        key: "tiktok"
+        name: "\u56FE\u7247\u538B\u7F29",
+        router: "",
+        icon: "../../static/icons/compress-image.png",
+        key: "compressImg",
+        desc: "\u5BF9\u56FE\u7247\u8FDB\u884C\u65E0\u635F\u538B\u7F29\uFF0C\u6700\u9AD8\u538B\u7F29\u6BD4\u53EF\u8FBE75%"
       }
     ];
     return (_ctx, _cache) => {
       return {
-        a: common_vendor.f(platformList, (item, k0, i0) => {
+        a: common_vendor.f(functionList, (item, k0, i0) => {
           return {
-            a: common_vendor.t(item.name),
-            b: item.key,
-            c: common_vendor.o(($event) => common_vendor.unref(router_index.router).push({
-              path: "/pages/get-resource/get-resource",
-              query: {
-                key: item.key
-              }
-            }), item.key)
+            a: item.icon,
+            b: common_vendor.t(item.name),
+            c: common_vendor.t(item.desc),
+            d: item.key,
+            e: common_vendor.o(($event) => functionClick(item.router), item.key)
           };
         })
       };
     };
   }
 };
-var MiniProgramPage = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__file", "D:/WxProject/getUrlTest/pages/index/index.vue"]]);
+var MiniProgramPage = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__scopeId", "data-v-57280228"], ["__file", "G:/WxProject/getUrlTest/pages/index/index.vue"]]);
 wx.createPage(MiniProgramPage);

@@ -1,0 +1,1 @@
+<view class="data-v-28278fe6"><view class="title data-v-28278fe6">请选择对应的平台获取资源</view><view class="platform-list data-v-28278fe6"><view wx:for="{{a}}" wx:for-item="item" wx:key="b" class="platform-list-item data-v-28278fe6" bindtap="{{item.c}}"><label class="data-v-28278fe6">{{item.a}}</label><label class="data-v-28278fe6">></label></view></view></view>

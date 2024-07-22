@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/me/me",
-    "pages/get-resource/get-resource"
+    "pages/get-resource/get-resource",
+    "pages/platform-control/platform-control"
   ],
   "window": {
     "navigationBarTextStyle": "black",
