@@ -3,7 +3,7 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "去水印Tools"
+				"navigationBarTitleText": "图片精选工具"
 			}
 		},
 	    {
@@ -24,6 +24,15 @@
 		    }
 		    
 		}
+        ,{
+            "path" : "pages/platform-control/platform-control",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

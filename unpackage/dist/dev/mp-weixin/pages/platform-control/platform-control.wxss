@@ -1,0 +1,17 @@
+
+.title.data-v-28278fe6 {
+	font-size: 32rpx;
+	text-align: center;
+	padding: 10rpx 0 20rpx;
+}
+.platform-list.data-v-28278fe6 {
+}
+.platform-list-item.data-v-28278fe6 {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20rpx;
+}
+.platform-list-item.data-v-28278fe6:active {
+	background-color: #F8F8F8;
+}
